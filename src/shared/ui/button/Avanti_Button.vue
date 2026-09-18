@@ -13,7 +13,7 @@
 import { computed } from 'vue';
 
 interface IProps {
-  variant?: 'neutral' | 'active' | 'solid';
+  variant?: 'neutral' | 'active' | 'solid' | 'white';
   to?: string;
   notificationsCount?: number;
 }
@@ -31,6 +31,8 @@ const buttonStyle = computed(() => {
       return 'bg-light-blue border-none text-blue';
     case 'solid':
       return 'bg-blue border-none text-white';
+    case 'white':
+      return 'bg-white border-none text-blue';
   }
 })
 </script>
