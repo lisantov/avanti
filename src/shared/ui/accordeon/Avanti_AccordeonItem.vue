@@ -9,7 +9,7 @@
         <span class="font-medium text-xs" :class="isWaiting ? 'text-gray' : 'text-blue'">{{ statusText }}</span>
       </div>
     </div>
-    <div class="flex items-center justify-center w-11 aspect-square rounded-full bg-blue">
+    <div class="flex items-center justify-center w-7 aspect-square rounded-full bg-blue">
       <img src="/icons/checkmark.svg" alt="" />
     </div>
   </div>
