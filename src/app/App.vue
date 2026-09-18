@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { DefaultLayout } from './layouts';
-import { Button } from '@/shared/ui';
+import { Button, Accordeon } from '@/shared/ui';
 </script>
 
 <template>
   <DefaultLayout>
-    <section class="w-full flex flex-col gap-4 bg-blue p-8 rounded-[20px]">
+    <section class="w-full flex flex-col gap-4 bg-linear-to-b from-blue to-gray-blue p-8 rounded-[20px]">
       <div class="w-full flex flex-col gap-4">
         <div class="flex justify-between font-semibold text-white text-xs">
           <p class="uppercase">Il tuo saldo</p>
@@ -29,5 +29,6 @@ import { Button } from '@/shared/ui';
         <p class="text-white text-xs">Fondi disponibili dopo l'approvazione dei documenti</p>
       </div>
     </section>
+    <Accordeon />
   </DefaultLayout>
 </template>
