@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { Button } from '@/shared/ui';
+import { Button, Icon } from '@/shared/ui';
 
 </script>
 
 <template>
   <header class="w-full flex flex-col">
-    <div class="flex justify-between items-center px-18 py-9 bg-white border-b border-b-light-gray">
+    <div class="flex flex-1 justify-between items-center px-18 py-9 not-xl:px-4 not-xl:py-4.5 bg-white border-b border-b-light-gray">
       <div class="flex items-center gap-13">
-        <img src="/logo.png" alt="Avanti logo"/>
-        <div class="flex items-center gap-3 text-sm">
+        <img class="not-xl:w-25" src="/logo.png" alt="Avanti logo"/>
+        <div class="flex items-center gap-3 text-sm not-lg:hidden">
           <Button variant="active" class="min-w-55">
             <img src="/icons/home.svg" alt=""/>
             Home
@@ -23,12 +23,19 @@ import { Button } from '@/shared/ui';
           </Button>
         </div>
       </div>
-      <Button class="text-md uppercase font-semibold" variant="solid" :notificationsCount="4">
+      <Button class="text-md uppercase font-semibold not-lg:hidden" variant="solid" :notificationsCount="4">
         <img src="/icons/chat.svg" alt=""/>
         Assistenza
       </Button>
+      <div class="flex items-center gap-3 lg:hidden">
+        <Icon icon="bell" :notificationsCount="4" />
+        <div class="flex gap-1.5 items-center">
+          <img class="border border-blue rounded-full" src="/images/profile.png" alt="" />
+          <p class="font-semibold text-[13px] text-dark-blue">MR</p>
+        </div>
+      </div>
     </div>
-    <div class="px-18 py-2.5 flex justify-between items-center">
+    <div class="px-18 py-2.5 flex justify-between items-center  not-lg:hidden">
       <div class="flex gap-3 items-center">
         <img src="/images/profile.png" class="rounded-full" alt="Profile avatar"/>
         <div class="flex flex-col">
