@@ -3,6 +3,7 @@
 
 :root {
   --dark-white: #f8fafb;
+  --gray: #71717a;
   --light-gray: #e4e4e7;
   --light-blue: #eaf4f6;
   --blue: #2491aa;
@@ -12,6 +13,7 @@
 
 @theme inline {
   --color-dark-white: var(--dark-white);
+  --color-gray: var(--gray);
   --color-light-gray: var(--light-gray);
   --color-light-blue: var(--light-blue);
   --color-blue: var(--blue);
@@ -21,4 +23,8 @@
 
 * {
   font: Inter;
+}
+
+body {
+  background-color: #f8fafb;
 }
